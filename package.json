@@ -1,0 +1,13 @@
+{
+  "name": "fahrly-app",
+  "version": "1.0.0",
+  "description": "Fahrly Application Frontend",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
+
