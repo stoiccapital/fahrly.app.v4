@@ -25,5 +25,6 @@ export function renderFleet() {
                 </div>
             </div>
         </div>
+        <div id="vehicle-performance-container"></div>
     `;
 }

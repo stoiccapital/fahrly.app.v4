@@ -29,6 +29,12 @@ export function renderHR(): string {
                         Calculate employee salaries based on hours worked, overtime, deductions, and bonuses.
                     </p>
                 </div>
+                <div class="card">
+                    <h2 class="card-title">Driver Performance</h2>
+                    <p class="card-content">
+                        Track and evaluate driver performance metrics, safety records, and delivery efficiency.
+                    </p>
+                </div>
             </div>
         </div>
     `;

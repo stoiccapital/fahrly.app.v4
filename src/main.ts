@@ -2,6 +2,7 @@ import { createNavbar, updateActiveNavLink, setLoadModuleFunction } from './navb
 import { renderDispatch } from './modules/dispatch.js';
 import { renderHR } from './modules/hr.js';
 import { renderFleet } from './modules/fleet.js';
+import { initVehiclePerformanceModule } from './modules/vehicle-performance.js';
 
 const mainContent = document.getElementById('main-content') as HTMLElement;
 const navbar = document.getElementById('navbar') as HTMLElement;
@@ -31,6 +32,14 @@ function loadModule(module: string): void {
     
     if (mainContent) {
         mainContent.innerHTML = content;
+        
+        // Initialize Vehicle Performance submodule if Fleet is loaded
+        if (module === 'fleet') {
+            const vehiclePerformanceContainer = document.getElementById('vehicle-performance-container');
+            if (vehiclePerformanceContainer) {
+                initVehiclePerformanceModule(vehiclePerformanceContainer);
+            }
+        }
     }
     
     updateActiveNavLink(module);
