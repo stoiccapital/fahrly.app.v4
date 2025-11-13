@@ -173,11 +173,13 @@
   background-color: var(--surface, #ffffff);
   border-radius: 0.5rem;
   box-shadow: var(--shadow, 0 1px 3px 0 rgb(0 0 0 / 0.1));
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .vf-table {
   width: 100%;
+  min-width: 1200px;
   border-collapse: collapse;
 }
 
